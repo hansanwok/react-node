@@ -4,9 +4,9 @@ import { Provider } from 'react-redux';
 import store from 'store/configureStore';
 import { BrowserRouter } from 'react-router-dom';
 
-import 'index.css';
 import Routes from 'routes';
 import registerServiceWorker from 'registerServiceWorker';
+import './assets/scss/theme.css';
 
 
 ReactDOM.render(
