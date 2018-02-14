@@ -9,6 +9,6 @@ app.use(bodyParser.json({limit: '5mb'}));
 // cross origin config
 app.use(cors());
 
-app.get('/api', (req, res) => res.send('Hello World!'));
+app.get('/api', (req, res) => res.send({ success: true, data: 'I am text from server'}));
 
 app.listen(3001, () => console.log('http://localhost is listening on port 3001!'));
