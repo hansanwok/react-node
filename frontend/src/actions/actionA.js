@@ -1,3 +1,14 @@
-import { CHANGE_TEXT } from './constants';
+import {
+  CHANGE_TEXT,
+  CALL_API,
+  CALL_API_FAIL,
+  CALL_API_SUCCESS,
+} from './constants';
 
 export const onChangeText = (text) => ({ text, type: CHANGE_TEXT });
+
+export const onCallApi = () => ({ type: CALL_API });
+
+export const onCallApiSuccess = (data) => ({ data, type: CALL_API_SUCCESS });
+
+export const onCallApiFail =(e) => ({ e, type: CALL_API_FAIL });
