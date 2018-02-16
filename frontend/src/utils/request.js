@@ -1,5 +1,5 @@
 import 'whatwg-fetch';
-//import config from '../configs';
+import config from './config';
 const isBrowser = typeof window !== 'undefined';
 
 /**
@@ -42,7 +42,7 @@ function checkStatus(response) {
  * @return {object}           The response data
  */
 export default function request(url, options) {
-  const APIUrl = `http://localhost:3001` + url;
+  const APIUrl = config.apiUrl + url;
   return fetch(APIUrl, options)
     .then(checkStatus)
     .then(parseJSON);
