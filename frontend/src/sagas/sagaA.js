@@ -4,7 +4,7 @@ import { onCallApiSuccess, onCallApiFail } from 'actions/actionA';
 import { CALL_API } from 'actions/constants';
 
 export function* fetchData() {
-  const requestURL = `/api/test`;
+  const requestURL = `/test`;
   const options = requestOptions.get();
 
   try {
