@@ -8,6 +8,8 @@ export default (app) => {
 
   /* UNAUTHENTICATE ROUTER  */
   unauthRoute.get('/test', (req, res) => res.send({ success: true, data: 'I am text from server' }));
+
+  unauthRoute.post('/signup', User.signup);
   unauthRoute.post('/login', User.login);
 
 

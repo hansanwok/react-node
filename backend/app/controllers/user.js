@@ -1,14 +1,23 @@
 import UserHelper from '../helpers/user';
 
 class User {
+
+  async signup(req, res) {
+    try {
+      res.json(await UserHelper.signup(req));
+    }
+    catch (err) {
+      res.json({ success: false, err });
+    }
+  }
+
   async login(req, res) {
     try {
-      const { user, token } = await UserHelper.login(req);
+      const user = await UserHelper.login(req);
       res.json({
         success: true,
         message: 'Enjoy your user with token!',
-        user,
-        token
+        user
       });
     }
     catch (err) {
