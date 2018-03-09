@@ -13,6 +13,12 @@ class App extends Component {
         <p className="App-intro">
          <Link to="/a">Go to Page A</Link>
         </p>
+        <p className="App-intro">
+         <Link to="/login">Go to Login page</Link>
+        </p>
+        <p className="App-intro">
+         <Link to="/c">Go to Private Page</Link>
+        </p>
       </div>
     );
   }

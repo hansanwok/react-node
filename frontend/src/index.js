@@ -1,19 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from 'configureStore';
-import { BrowserRouter } from 'react-router-dom';
+import configureStore from 'configureStore';
+import { ConnectedRouter } from 'react-router-redux';
+import { createBrowserHistory } from 'history';
+import globalSagas from 'sagas';
+
 
 import Routes from 'routes';
 import registerServiceWorker from 'registerServiceWorker';
 import './assets/scss/theme.css';
 
+const history = createBrowserHistory();
+const store = configureStore(history);
+store.runSaga(globalSagas);
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <ConnectedRouter history={history}>
       <Routes />
-    </BrowserRouter>
+    </ConnectedRouter>
   </Provider>
   , document.getElementById('root'));
 registerServiceWorker();

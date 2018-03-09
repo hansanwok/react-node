@@ -1,0 +1,97 @@
+/**screen size **/
+$max-screen: 1440px !default;
+$navbar-height: 68px !default;
+
+$extra-small-and-down: "(max-width: 480px)" !default;
+$small-and-down-2: "(max-width: 600px)" !default;
+$small-and-down: "(max-width: 767px)" !default;
+$small-and-up: "(min-width: 768px)" !default;
+$medium-and-up: "(min-width: 992px)" !default;
+$medium-and-down: "(max-width: 991px)" !default;
+$medium-and-small: "(min-width: 768px) and (max-width: 991px)" !default;
+$large-and-up: "(min-width: 992px)" !default;
+$extra-large-and-up: "(min-width: 1367px)" !default;
+
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$max-screen-size: 1300px !default;
+$extra-large-screen: 2560px !default;
+
+/**screen color **/
+$white: #ffffff;
+$black: #212B36;
+$black-2: #313E47;
+$black-3: #43484D;
+$black-4: #2d2d2d;
+$dark: #000000;
+$blue: #3B5B99;
+$gray-fa: #FAFAFA;
+$gray-af: #AFAFAF;
+$gray-a1: #A1A1A1;
+$gray-ad: #ADADAD;
+$gray-44: #444444;
+$gray-dc: #dcdcdc;
+$gray-de: #DEDEDE;
+$gray-ed: #EDEDED;
+$gray-6f: #6F7E82;
+$gray-c1: #C1C6D2;
+$gray-d8: #D8D8D8;
+$gray-b1: #B1B6C2;
+$violet: #7c01f7;;
+$light-blue: #0195d6;
+
+$transparent: transparent;
+$border: #F5F5F5;
+$border-f8: #F8F8F8;
+$bright-red: #FC4F47;
+$violet-cute: #6a24fa;
+$white-25: rgba(255, 255, 255, 0.25);
+$border: #EFEFEF;
+$grayish-blue: #414d54;
+$background-hover: rgba(33, 33, 33, 0.05);
+
+/**screen size **/
+$font-size-extra-huge: 78px !default;
+$font-size-huge: 62px !default;
+$font-size-huge-small: 60px !default;
+$font-size-large: 36px !default;
+$font-size-large-2: 32px !default;
+$font-size-large-3: 28px !default;
+$font-size-large-small: 24px !default;
+$font-size-medium-lage: 20px !default;
+$font-size-medium: 18px !default;
+$font-size-medium-2: 16px !default;
+$font-size-medium-small: 15px !default;
+$font-size-normal: 14px !default;
+$font-size-small: 12px !default;
+$font-size-small-2: 11px !default;
+$font-size-small-3: 10px !default;
+$emtopx: 16 !default;
+
+$rate: 0.075;
+
+$font-size-extra-huge-vw: 78vw * $rate !default;
+$navbar-height-vw: 68vw * $rate !default;
+$font-size-huge-small-vw: 60vw * $rate !default;
+$font-size-huge-vw: 62vw * $rate !default;
+$font-size-large-vw: 36vw * $rate !default;
+$font-size-large-2-vw: 32vw * $rate !default;
+$font-size-large-3-vw: 28vw * $rate !default;
+$font-size-large-small-vw: 24vw * $rate !default;
+$font-size-medium-lage-vw: 20vw * $rate !default;
+$font-size-medium-vw: 18vw * $rate !default;
+$font-size-medium-2-vw: 16vw * $rate !default;
+$font-size-medium-small-vw: 15vw * $rate !default;
+$font-size-normal-vw: 14vw * $rate !default;
+$font-size-small-vw: 12vw * $rate !default;
+$font-size-small-2-vw: 11vw * $rate !default;
+$font-size-small-check-box: 10px;
+
+$padding-item: 8px !default;
+
+/*Font*/
+$font: 'proxima-nova', 'Avenir', 'Roboto', 'Helvetica', 'Arial', sans-serif;
