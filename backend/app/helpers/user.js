@@ -48,11 +48,11 @@ class UserHelper {
                 admin: user.admin
               };
               const token = generateToken(payload);
-  
+
               /* Non-configurable properties cannot be re-configured or deleted. */
               const respondUser = formatUser(user, token);
-  
-              resolve({ user: respondUser });
+
+              resolve(respondUser);
             }
           });
         }
